@@ -51,8 +51,9 @@ else
 
         # FIXME - should be integrated in Makefile.cpu (Makefile_32.cpu)
         cflags-$(CONFIG_MK8) += $(call cc-option,-march=k8)
+	cflags-$(CONFIG_MK10) += $(call cc-option,-march=amd10fam) \
+		$(call cc-option,-mtune=amd10fam, $(call cc-option,--param l2-cache-size=512))
         cflags-$(CONFIG_MPSC) += $(call cc-option,-march=nocona)
-
         cflags-$(CONFIG_MCORE2) += \
                 $(call cc-option,-march=core2,$(call cc-option,-mtune=generic))
 	cflags-$(CONFIG_MATOM) += $(call cc-option,-march=atom) \
