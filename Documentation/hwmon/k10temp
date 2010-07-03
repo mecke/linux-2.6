@@ -1,0 +1,17 @@
+Kernel driver k10temp
+====================
+
+Supported chips:
+  * AMD Phenom/Phenom II CPUs
+    Prefix: 'k10temp'
+    Addresses scanned: PCI space
+    Datasheet: ???
+
+Author: Clemens Ladisch
+Contact: Clemens Ladisch <clemens@ladisch.de>
+
+Description
+-----------
+
+Placeholder for documentation on k10temp.c, which was found on the Internet
+and added to a personal kernel tree.
